@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="loginexample.techblogon.com.studentguide"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".ApplicationHelper"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUPActivity" />
+        <activity android:name=".toentry" />
+        <activity android:name=".inentry" />
+        <activity android:name=".textbook" />
+        <activity android:name=".query" />
+        <activity android:name=".cse310" />
+        <activity android:name=".cse320" />
+        <activity android:name=".cse369" />
+        <activity android:name=".cse331" />
+        <activity android:name=".chy272" />
+        >
+        <activity android:name=".AnswerQuery"></activity>
+    </application>
+
+</manifest>
